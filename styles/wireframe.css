@@ -806,7 +806,7 @@ a { color: inherit; text-decoration: none; }
    INDEX PAGE (sitemap navigator) — refined
    ============================================================ */
 .wf-index-header {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--line);
   position: sticky;
@@ -816,7 +816,7 @@ a { color: inherit; text-decoration: none; }
 .wf-index-header-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 22px 40px;
+  padding: 20px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -830,14 +830,14 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
   font-weight: 500;
 }
-.wf-index-header-right { display: flex; gap: 24px; font-size: 12px; font-weight: 600; letter-spacing: 0.10em; text-transform: uppercase; }
+.wf-index-header-right { display: flex; gap: 24px; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
 .wf-index-header-right a { color: var(--muted); transition: color 0.25s; }
 .wf-index-header-right a:hover { color: var(--ink); }
 
 .wf-index-hero-v2 {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 88px 40px 56px;
+  padding: 96px 40px 64px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 64px;
@@ -845,19 +845,20 @@ a { color: inherit; text-decoration: none; }
 }
 .wf-index-hero-v2 h1 {
   font-family: var(--font-display);
-  font-size: clamp(48px, 6.5vw, 84px);
-  font-weight: 400;
-  letter-spacing: -0.035em;
+  font-size: clamp(44px, 6vw, 80px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
   color: var(--ink);
-  margin-bottom: 20px;
-  line-height: 0.95;
+  margin-bottom: 22px;
+  line-height: 1;
 }
-.wf-index-hero-v2 h1 em { font-style: italic; color: var(--bronze); }
+.wf-index-hero-v2 h1 em { font-style: normal; color: var(--navy); }
 .wf-index-hero-v2 .lead {
   font-size: 17px;
   max-width: 620px;
   line-height: 1.6;
-  color: var(--text);
+  color: var(--ink);
+  opacity: 0.78;
 }
 .wf-index-hero-v2 .legend {
   display: flex;
@@ -871,9 +872,9 @@ a { color: inherit; text-decoration: none; }
   width: 28px; height: 18px;
   border: 1px solid var(--ink);
 }
-.wf-index-hero-v2 .legend .mark--full { background: var(--ink); }
-.wf-index-hero-v2 .legend .mark--partial { background: var(--bg); }
-.wf-index-hero-v2 .legend .mark--new { background: var(--bg); border-style: dashed; border-color: var(--bronze); }
+.wf-index-hero-v2 .legend .mark--full    { background: var(--ink); }
+.wf-index-hero-v2 .legend .mark--partial { background: var(--paper); }
+.wf-index-hero-v2 .legend .mark--new     { background: var(--paper); border-style: dashed; border-color: var(--navy); }
 
 .wf-stats-strip {
   max-width: var(--max-w);
@@ -893,10 +894,10 @@ a { color: inherit; text-decoration: none; }
 .wf-stats-strip .stat:last-child { border-right: none; }
 .wf-stats-strip .num {
   font-family: var(--font-display);
-  font-size: 42px;
-  font-weight: 400;
+  font-size: 38px;
+  font-weight: 500;
   color: var(--ink);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
   display: block;
   margin-bottom: 8px;
   line-height: 0.95;
@@ -911,7 +912,7 @@ a { color: inherit; text-decoration: none; }
 
 .wf-section-head {
   max-width: var(--max-w);
-  margin: 88px auto 32px;
+  margin: 96px auto 32px;
   padding: 0 40px 20px;
   display: flex;
   align-items: baseline;
@@ -920,15 +921,15 @@ a { color: inherit; text-decoration: none; }
 }
 .wf-section-head h2 {
   font-family: var(--font-display);
-  font-size: 36px;
-  font-weight: 400;
+  font-size: 34px;
+  font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.02em;
 }
 .wf-section-head .desc { color: var(--muted); font-size: 14px; flex: 1; line-height: 1.5; }
 .wf-section-head .count {
   font-size: 10px;
-  color: var(--bronze);
+  color: var(--ink);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 600;
@@ -944,14 +945,14 @@ a { color: inherit; text-decoration: none; }
 }
 
 .wf-sec-card {
-  background: var(--bg);
+  background: var(--paper);
   border: 1px solid var(--line);
   padding: 32px;
   display: flex;
   flex-direction: column;
   transition: border-color 0.3s, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.wf-sec-card:hover { border-color: var(--ink); transform: translateY(-4px); }
+.wf-sec-card:hover { border-color: var(--ink); transform: translateY(-3px); }
 .wf-sec-card-head {
   display: flex;
   align-items: flex-start;
@@ -966,13 +967,13 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--bronze);
+  color: var(--navy);
   margin-bottom: 8px;
   display: block;
 }
 .wf-sec-card-head h3 {
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.015em;
@@ -989,27 +990,26 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   align-self: flex-start;
 }
-.wf-sec-card-badge--full { background: var(--ink); color: var(--cream); }
-.wf-sec-card-badge--partial { background: var(--bg); }
-.wf-sec-card-badge--new { background: var(--bg); border-style: dashed; color: var(--bronze); border-color: var(--bronze); }
+.wf-sec-card-badge--full    { background: var(--ink); color: var(--paper); }
+.wf-sec-card-badge--partial { background: var(--paper); }
+.wf-sec-card-badge--new     { background: var(--paper); border-style: dashed; color: var(--navy); border-color: var(--navy); }
 
 .wf-sec-card-list { flex: 1; list-style: none; margin: 0; padding: 0; }
-.wf-sec-card-list li { margin: 0; }
 .wf-sec-card-list a {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
-  color: var(--text);
-  border-bottom: 1px solid var(--line-soft);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
   gap: 12px;
   font-size: 14px;
   font-weight: 500;
-  transition: padding-left 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s;
+  transition: padding-left 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .wf-sec-card-list li:last-child a { border-bottom: none; }
-.wf-sec-card-list a:hover { color: var(--ink); padding-left: 6px; }
-.wf-sec-card-list .marker { font-size: 11px; color: var(--bronze); letter-spacing: 0; }
+.wf-sec-card-list a:hover { padding-left: 6px; }
+.wf-sec-card-list .marker { font-size: 11px; color: var(--navy); }
 
 .wf-sec-card-foot {
   margin-top: 20px;
@@ -1028,21 +1028,12 @@ a { color: inherit; text-decoration: none; }
    LAYOUT PATTERNS — page-type-specific
    ============================================================ */
 
-/* ---- Compact hero (for utility/legal pages) ---- */
-.wf-hero--compact {
-  padding-top: 56px;
-  padding-bottom: 56px;
-}
-.wf-hero--compact h1 { font-size: clamp(36px, 4.5vw, 56px); margin-bottom: 16px; }
-.wf-hero--compact .lead { margin-bottom: 24px; font-size: 17px; }
-
-/* ---- Search bar (prominent) ---- */
+/* ====== Search ====== */
 .wf-search {
   display: flex;
   align-items: center;
-  gap: 0;
   border: 1px solid var(--line);
-  background: var(--bg);
+  background: var(--paper);
   max-width: 720px;
   transition: border-color 0.25s;
 }
@@ -1060,7 +1051,7 @@ a { color: inherit; text-decoration: none; }
 .wf-search input:focus { outline: none; }
 .wf-search button {
   background: var(--ink);
-  color: var(--cream);
+  color: var(--paper);
   border: none;
   padding: 20px 28px;
   font-size: 11px;
@@ -1071,7 +1062,7 @@ a { color: inherit; text-decoration: none; }
   font-family: inherit;
 }
 
-/* ---- Doc metadata strip (legal pages) ---- */
+/* ====== Doc meta strip (legal pages) ====== */
 .wf-doc-meta {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1081,10 +1072,7 @@ a { color: inherit; text-decoration: none; }
   margin: 32px 0;
   font-size: 12px;
 }
-.wf-doc-meta .item {
-  background: var(--bg);
-  padding: 18px 22px;
-}
+.wf-doc-meta .item { background: var(--paper); padding: 18px 22px; }
 .wf-doc-meta .item .label {
   display: block;
   font-size: 10px;
@@ -1099,10 +1087,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 500;
   font-family: var(--font-display);
   font-size: 16px;
-  letter-spacing: -0.005em;
 }
 
-/* ---- Two-column document layout (legal pages — TOC + content) ---- */
+/* ====== Two-column document layout (legal) ====== */
 .wf-doc {
   display: grid;
   grid-template-columns: 1fr 240px;
@@ -1117,16 +1104,17 @@ a { color: inherit; text-decoration: none; }
 .wf-doc-body .article:last-child { margin-bottom: 0; }
 .wf-doc-body .article-num {
   display: block;
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--bronze);
-  letter-spacing: 0.04em;
-  margin-bottom: 8px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
 .wf-doc-body .article h2 {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.02em;
@@ -1140,11 +1128,10 @@ a { color: inherit; text-decoration: none; }
   color: var(--ink);
   margin-top: 28px;
   margin-bottom: 10px;
-  letter-spacing: 0;
 }
-.wf-doc-body .article p { font-size: 15.5px; line-height: 1.75; margin-bottom: 16px; max-width: 720px; }
+.wf-doc-body .article p { font-size: 15.5px; line-height: 1.75; margin-bottom: 16px; max-width: 720px; color: var(--ink); opacity: 0.85; }
 .wf-doc-body .article ul, .wf-doc-body .article ol { margin: 0 0 16px 22px; }
-.wf-doc-body .article li { margin-bottom: 8px; line-height: 1.65; font-size: 15.5px; }
+.wf-doc-body .article li { margin-bottom: 8px; line-height: 1.65; font-size: 15.5px; color: var(--ink); opacity: 0.85; }
 
 .wf-toc {
   position: sticky;
@@ -1156,17 +1143,17 @@ a { color: inherit; text-decoration: none; }
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--bronze);
+  color: var(--navy);
   margin-bottom: 16px;
   font-weight: 600;
 }
 .wf-toc ol { list-style: none; counter-reset: toc-counter; padding: 0; }
 .wf-toc li {
   counter-increment: toc-counter;
-  border-top: 1px solid var(--line-soft);
+  border-top: 1px solid var(--line);
   position: relative;
 }
-.wf-toc li:last-child { border-bottom: 1px solid var(--line-soft); }
+.wf-toc li:last-child { border-bottom: 1px solid var(--line); }
 .wf-toc li::before {
   content: counter(toc-counter, decimal-leading-zero);
   position: absolute;
@@ -1179,19 +1166,19 @@ a { color: inherit; text-decoration: none; }
 .wf-toc a {
   display: block;
   padding: 14px 0 14px 36px;
-  color: var(--text);
+  color: var(--ink);
   font-weight: 500;
-  transition: color 0.2s, padding-left 0.25s;
+  transition: padding-left 0.25s;
   line-height: 1.4;
 }
-.wf-toc a:hover { color: var(--ink); padding-left: 42px; }
+.wf-toc a:hover { padding-left: 42px; }
 
-/* ---- A-Z navigation (glossary) ---- */
+/* ====== A-Z nav (glossary) ====== */
 .wf-az-nav {
   position: sticky;
   top: 80px;
   z-index: 40;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(20px);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -1216,15 +1203,13 @@ a { color: inherit; text-decoration: none; }
   font-weight: 500;
   color: var(--muted);
   padding: 6px 12px;
-  letter-spacing: 0.02em;
   transition: color 0.2s;
 }
 .wf-az-nav a:hover { color: var(--ink); }
 .wf-az-nav a.is-active { color: var(--ink); }
 .wf-az-nav a.is-empty { color: var(--line); pointer-events: none; }
 
-/* ---- Glossary list (definitions) ---- */
-.wf-glossary { margin: 0; padding: 0; }
+/* ====== Glossary ====== */
 .wf-glossary .letter-block {
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -1237,10 +1222,10 @@ a { color: inherit; text-decoration: none; }
 .wf-glossary .letter {
   font-family: var(--font-display);
   font-size: 80px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--ink);
   line-height: 0.9;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
 }
 .wf-glossary dl { display: grid; gap: 32px; }
 .wf-glossary dt {
@@ -1259,18 +1244,16 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--bronze);
+  color: var(--navy);
   padding: 3px 8px;
-  border: 1px solid var(--bronze);
+  border: 1px solid var(--navy);
   vertical-align: 4px;
 }
-.wf-glossary dd { font-size: 15.5px; line-height: 1.7; color: var(--text); max-width: 760px; }
+.wf-glossary dd { font-size: 15.5px; line-height: 1.7; color: var(--ink); opacity: 0.85; max-width: 760px; }
 
-/* ---- Accordion (FAQ) ---- */
+/* ====== Accordion (FAQ) ====== */
 .wf-accordion { border-top: 1px solid var(--line); }
-.wf-accordion details {
-  border-bottom: 1px solid var(--line);
-}
+.wf-accordion details { border-bottom: 1px solid var(--line); }
 .wf-accordion summary {
   list-style: none;
   cursor: pointer;
@@ -1291,28 +1274,21 @@ a { color: inherit; text-decoration: none; }
 .wf-accordion summary::after {
   content: "+";
   font-family: var(--font-display);
-  font-size: 24px;
-  color: var(--bronze);
+  font-size: 26px;
+  color: var(--navy);
   font-weight: 400;
   line-height: 1;
   flex-shrink: 0;
   transition: transform 0.3s;
 }
 .wf-accordion details[open] summary::after { content: "–"; }
-.wf-accordion details[open] summary { color: var(--ink); }
-.wf-accordion summary:hover { color: var(--bronze); }
-.wf-accordion .answer {
-  padding: 0 0 32px 0;
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--text);
-  max-width: 820px;
-}
+.wf-accordion summary:hover { color: var(--navy); }
+.wf-accordion .answer { padding: 0 0 32px 0; font-size: 16px; line-height: 1.7; color: var(--ink); opacity: 0.85; max-width: 820px; }
 .wf-accordion .answer p { margin-bottom: 16px; }
 .wf-accordion .answer p:last-child { margin-bottom: 0; }
-.wf-accordion .answer a { color: var(--ink); border-bottom: 1px solid var(--bronze); padding-bottom: 1px; }
+.wf-accordion .answer a { color: var(--ink); border-bottom: 1px solid var(--navy); padding-bottom: 1px; }
 
-/* ---- Featured story card (news) ---- */
+/* ====== Feature (news lead) ====== */
 .wf-feature {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -1328,23 +1304,23 @@ a { color: inherit; text-decoration: none; }
   gap: 24px;
   font-size: 10px;
   font-weight: 600;
-  color: var(--bronze);
+  color: var(--navy);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 .wf-feature h2 {
   font-family: var(--font-display);
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.02em;
   line-height: 1.05;
   margin-bottom: 20px;
 }
-.wf-feature p { font-size: 16px; line-height: 1.65; margin-bottom: 24px; }
+.wf-feature p { font-size: 16px; line-height: 1.65; margin-bottom: 24px; color: var(--ink); opacity: 0.78; }
 
-/* ---- News card row (compact) ---- */
+/* ====== News row (compact) ====== */
 .wf-news-row {
   display: grid;
   grid-template-columns: 180px 1fr auto;
@@ -1372,21 +1348,21 @@ a { color: inherit; text-decoration: none; }
 }
 .wf-news-row .body .meta {
   font-size: 10px;
-  color: var(--bronze);
+  color: var(--navy);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   font-weight: 600;
 }
-.wf-news-row .body p { font-size: 14px; line-height: 1.55; margin-top: 6px; color: var(--text); max-width: 640px; }
+.wf-news-row .body p { font-size: 14px; line-height: 1.55; margin-top: 6px; color: var(--ink); opacity: 0.78; max-width: 640px; }
 .wf-news-row a.arrow {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--ink);
 }
 
-/* ---- Toolbar (filters) ---- */
+/* ====== Toolbar (filters) ====== */
 .wf-toolbar {
   display: flex;
   align-items: center;
@@ -1406,7 +1382,7 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 
-/* ---- Job row (careers) ---- */
+/* ====== Jobs ====== */
 .wf-jobs { border-top: 1px solid var(--ink); }
 .wf-job {
   display: grid;
@@ -1422,7 +1398,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 18px;
   font-weight: 500;
   color: var(--muted);
-  letter-spacing: -0.01em;
 }
 .wf-job .role {
   font-family: var(--font-display);
@@ -1432,20 +1407,16 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -0.01em;
   line-height: 1.2;
 }
-.wf-job .role-desc {
-  font-size: 12.5px;
-  color: var(--muted);
-  margin-top: 4px;
-}
+.wf-job .role-desc { font-size: 12.5px; color: var(--muted); margin-top: 4px; }
 .wf-job .pill {
   display: inline-block;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--ink);
   padding: 5px 10px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
 }
 .wf-job .apply {
   font-size: 11px;
@@ -1457,9 +1428,9 @@ a { color: inherit; text-decoration: none; }
   padding: 10px 18px;
   transition: background 0.2s, color 0.2s;
 }
-.wf-job .apply:hover { background: var(--ink); color: var(--cream); }
+.wf-job .apply:hover { background: var(--ink); color: var(--paper); }
 
-/* ---- Process timeline (horizontal) ---- */
+/* ====== Process timeline ====== */
 .wf-process {
   position: relative;
   display: grid;
@@ -1474,10 +1445,7 @@ a { color: inherit; text-decoration: none; }
   height: 1px;
   background: var(--line);
 }
-.wf-process .step {
-  position: relative;
-  padding-top: 64px;
-}
+.wf-process .step { position: relative; padding-top: 64px; }
 .wf-process .step::before {
   content: "";
   position: absolute;
@@ -1485,17 +1453,18 @@ a { color: inherit; text-decoration: none; }
   width: 12px;
   height: 12px;
   background: var(--ink);
-  border: 3px solid var(--cream);
+  border: 3px solid var(--paper);
   box-shadow: 0 0 0 1px var(--ink);
 }
 .wf-process .step .num {
   display: block;
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--bronze);
-  letter-spacing: 0.04em;
-  margin-bottom: 8px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .wf-process .step h4 {
   font-family: var(--font-display);
@@ -1506,7 +1475,7 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 12px;
   line-height: 1.2;
 }
-.wf-process .step p { font-size: 13.5px; line-height: 1.55; color: var(--text); margin-bottom: 0; }
+.wf-process .step p { font-size: 13.5px; line-height: 1.55; color: var(--ink); opacity: 0.78; margin-bottom: 0; }
 .wf-process .step .timeline {
   display: block;
   margin-top: 12px;
@@ -1517,7 +1486,7 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
 }
 
-/* ---- Vertical process steps (alternate) ---- */
+/* ====== Vertical process ====== */
 .wf-process-v { display: grid; gap: 4px; }
 .wf-process-v .step {
   display: grid;
@@ -1529,8 +1498,8 @@ a { color: inherit; text-decoration: none; }
 .wf-process-v .step:last-child { border-bottom: 1px solid var(--line); }
 .wf-process-v .step .step-num {
   font-family: var(--font-display);
-  font-size: 52px;
-  font-weight: 400;
+  font-size: 56px;
+  font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.04em;
   line-height: 0.9;
@@ -1543,7 +1512,7 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 10px;
   letter-spacing: -0.01em;
 }
-.wf-process-v .step p { font-size: 15px; line-height: 1.65; margin-bottom: 8px; max-width: 720px; }
+.wf-process-v .step p { font-size: 15px; line-height: 1.65; margin-bottom: 8px; max-width: 720px; color: var(--ink); opacity: 0.85; }
 .wf-process-v .step .timing {
   display: inline-block;
   margin-top: 8px;
@@ -1551,10 +1520,10 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--bronze);
+  color: var(--navy);
 }
 
-/* ---- Calculator tool (sticky split) ---- */
+/* ====== Calculator ====== */
 .wf-tool {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -1563,7 +1532,7 @@ a { color: inherit; text-decoration: none; }
   margin: 56px 0;
 }
 .wf-tool-inputs {
-  background: var(--cream);
+  background: var(--surface);
   padding: 40px;
   position: sticky;
   top: 96px;
@@ -1572,7 +1541,6 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--font-display);
   font-size: 22px;
   font-weight: 500;
-  letter-spacing: -0.01em;
   color: var(--ink);
   margin-bottom: 24px;
 }
@@ -1585,10 +1553,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 13.5px;
 }
 .wf-tool-inputs .field:last-child { border-bottom: none; }
-.wf-tool-inputs .field label {
-  color: var(--text);
-  font-weight: 500;
-}
+.wf-tool-inputs .field label { color: var(--ink); font-weight: 500; }
 .wf-tool-inputs .field .val {
   font-family: var(--font-display);
   font-size: 18px;
@@ -1610,10 +1575,7 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--line);
   margin-bottom: 32px;
 }
-.wf-result-grid .cell {
-  background: var(--bg);
-  padding: 28px;
-}
+.wf-result-grid .cell { background: var(--paper); padding: 28px; }
 .wf-result-grid .cell .label {
   font-size: 10px;
   letter-spacing: 0.18em;
@@ -1624,15 +1586,15 @@ a { color: inherit; text-decoration: none; }
 }
 .wf-result-grid .cell .val {
   font-family: var(--font-display);
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.03em;
   line-height: 1;
 }
-.wf-result-grid .cell .val em { color: var(--bronze); }
+.wf-result-grid .cell .val em { color: var(--navy); font-style: normal; }
 
-/* ---- File card (downloads) ---- */
+/* ====== Files ====== */
 .wf-files {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -1641,18 +1603,18 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--line);
 }
 .wf-file {
-  background: var(--bg);
+  background: var(--paper);
   padding: 24px 24px 28px;
   display: flex;
   flex-direction: column;
   gap: 12px;
   transition: background 0.2s;
 }
-.wf-file:hover { background: var(--cream); }
+.wf-file:hover { background: var(--surface); }
 .wf-file .file-meta {
   font-size: 10px;
   font-weight: 600;
-  color: var(--bronze);
+  color: var(--navy);
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -1669,7 +1631,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
   margin-top: auto;
   padding-top: 12px;
-  border-top: 1px solid var(--line-soft);
+  border-top: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
   letter-spacing: 0.04em;
@@ -1682,11 +1644,8 @@ a { color: inherit; text-decoration: none; }
   font-size: 11px;
 }
 
-/* ---- Photo essay spread (Life at Marjan) ---- */
-.wf-essay {
-  display: grid;
-  gap: 4px;
-}
+/* ====== Essay (Life at Marjan) ====== */
+.wf-essay { display: grid; gap: 4px; }
 .wf-essay-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1698,25 +1657,25 @@ a { color: inherit; text-decoration: none; }
 .wf-essay-row--image-text .text { order: 2; }
 .wf-essay-row .text h3 {
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 500;
   letter-spacing: -0.02em;
   color: var(--ink);
   margin-bottom: 16px;
   line-height: 1.15;
 }
-.wf-essay-row .text p { font-size: 15.5px; line-height: 1.7; margin-bottom: 14px; max-width: 540px; }
+.wf-essay-row .text p { font-size: 15.5px; line-height: 1.7; margin-bottom: 14px; max-width: 540px; color: var(--ink); opacity: 0.85; }
 .wf-essay-row .text .by {
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--bronze);
+  color: var(--navy);
   font-weight: 600;
   margin-top: 16px;
 }
 .wf-essay-row .wf-img { min-height: 480px; }
 
-/* ---- Category section header (utility pages) ---- */
+/* ====== Category header (utility pages) ====== */
 .wf-cat-head {
   display: grid;
   grid-template-columns: 80px 1fr;
@@ -1727,15 +1686,16 @@ a { color: inherit; text-decoration: none; }
   border-bottom: 1px solid var(--ink);
 }
 .wf-cat-head .cat-num {
-  font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--bronze);
-  letter-spacing: 0.02em;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 .wf-cat-head h3 {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 500;
   color: var(--ink);
   letter-spacing: -0.02em;
@@ -1751,6 +1711,11 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 1100px) {
+  .wf-shell { grid-template-columns: 1fr; gap: 48px; }
+  .wf-editorial, .wf-editorial--right, .wf-editorial--7-5, .wf-editorial--5-7 { grid-template-columns: 1fr; gap: 40px; }
+  .wf-grid--12 { grid-template-columns: 1fr; gap: 40px; }
+  .wf-footer-inner { grid-template-columns: 1fr 1fr; gap: 48px; }
+  .wf-index-hero-v2 { grid-template-columns: 1fr; gap: 40px; }
   .wf-doc { grid-template-columns: 1fr; gap: 40px; }
   .wf-toc { position: static; }
   .wf-feature { grid-template-columns: 1fr; gap: 32px; }
@@ -1767,18 +1732,6 @@ a { color: inherit; text-decoration: none; }
   .wf-glossary .letter-block { grid-template-columns: 1fr; gap: 24px; }
   .wf-glossary .letter { font-size: 56px; }
 }
-
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-@media (max-width: 1100px) {
-  .wf-shell { grid-template-columns: 1fr; gap: 48px; }
-  .wf-sidebar-sticky { position: static; }
-  .wf-editorial, .wf-editorial--right, .wf-editorial--7-5, .wf-editorial--5-7 { grid-template-columns: 1fr; gap: 40px; }
-  .wf-grid--12 { grid-template-columns: 1fr; gap: 40px; }
-  .wf-footer-inner { grid-template-columns: 1fr 1fr; gap: 48px; }
-  .wf-index-hero-v2 { grid-template-columns: 1fr; gap: 40px; }
-}
 @media (max-width: 900px) {
   .wf-grid--2, .wf-grid--3, .wf-grid--4 { grid-template-columns: 1fr; }
   .wf-stats-strip-inner { grid-template-columns: repeat(3, 1fr); }
@@ -1787,7 +1740,7 @@ a { color: inherit; text-decoration: none; }
   .wf-hero, .wf-related, .wf-dark-section, .wf-footer { padding-inline: 24px; }
   .wf-shell { padding: 64px 24px 80px; }
   .wf-header-inner { padding: 18px 24px; gap: 24px; }
-  .wf-nav { font-size: 12px; gap: 18px; }
+  .wf-nav { font-size: 11px; gap: 18px; }
   .wf-footer-inner { padding: 64px 24px 40px; grid-template-columns: 1fr 1fr; }
   .wf-stats-strip, .wf-card-grid, .wf-section-head { padding-inline: 24px; }
 }

@@ -1681,6 +1681,73 @@ a { color: inherit; text-decoration: none; }
 .wf-file .info a:hover { background: var(--ink); color: var(--paper); }
 
 /* ====== Essay (Life at Marjan) ====== */
+/* ====== Photo collage (mixed-size grid) ====== */
+.wf-collage {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 320px 320px;
+  gap: 12px;
+}
+.wf-collage > * { min-height: 0; min-width: 0; }
+.wf-collage > :nth-child(1) { grid-row: span 2; }
+.wf-collage > :nth-child(4) { grid-column: span 2; }
+@media (max-width: 900px) {
+  .wf-collage {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 220px;
+    grid-template-rows: none;
+  }
+  .wf-collage > :nth-child(1) { grid-row: auto; grid-column: span 2; }
+  .wf-collage > :nth-child(4) { grid-column: span 2; }
+}
+
+/* ====== Big numbered value blocks (working-at-marjan) ====== */
+.wf-values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.wf-values .value {
+  background: var(--paper);
+  padding: 40px 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 240px;
+}
+.wf-values .value .num {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.wf-values .value h4 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin-top: auto;
+}
+.wf-values .value p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink);
+  opacity: 0.78;
+}
+@media (max-width: 900px) {
+  .wf-values { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .wf-values { grid-template-columns: 1fr; }
+}
+
 .wf-essay { display: grid; gap: 4px; }
 .wf-essay-row {
   display: grid;

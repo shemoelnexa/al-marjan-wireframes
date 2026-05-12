@@ -431,6 +431,14 @@ a { color: inherit; text-decoration: none; }
   pointer-events: none;
 }
 .wf-img > * { position: relative; z-index: 2; }
+.wf-img > img.wf-img-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
 .wf-img--tall  { min-height: 420px; }
 .wf-img--short { min-height: 200px; }
 .wf-img--hero  { min-height: 560px; }

@@ -3,244 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Investment Calculator · Resources · Marjan</title>
+  <title>Investment Calculator — Marjan</title>
   <link rel="stylesheet" href="../../styles/wireframe.css" />
 </head>
 <body>
 
 <header class="wf-header">
   <div class="wf-header-inner">
-    <a href="../../index.html" class="wf-logo">Marjan</a>
+    <a class="wf-logo" href="../../index.html">MARJAN</a>
     <nav class="wf-nav">
       <a href="../development/future-developments.html">Development</a>
       <a href="../hospitality/hard-rock.html">Hospitality</a>
-      <a href="../investment/overview.html">Invest</a>
-      <a href="../news-media/latest-news.html">News</a>
+      <a href="../investment/overview.html">Investment</a>
+      <a href="../news-media/latest-news.html">News &amp; Media</a>
       <a href="../careers/working-at-marjan.html">Careers</a>
-      <a href="downloads.html" class="is-current">Resources</a>
+      <a href="faqs.html" class="is-current">Resources</a>
       <a href="../legal/legal-notices.html">Legal</a>
     </nav>
-    <a href="../investment/process.html" class="wf-header-cta">Enquire</a>
+    <a class="wf-header-cta" href="../investment/process.html">Investor Relations</a>
   </div>
 </header>
 
 <section class="wf-breadcrumb">
-  <a href="../../index.html">Index</a><span class="sep">/</span>
-  Resources<span class="sep">/</span>
+  <a href="../../index.html">Home</a><span class="sep">/</span>
+  <a href="faqs.html">Resources</a><span class="sep">/</span>
   Investment Calculator
 </section>
 
-<!-- =============== COMPACT HERO =============== -->
+<!-- =============== HERO =============== -->
 <section class="wf-hero wf-hero--compact">
-  <span class="wf-hero-tag wf-anim wf-anim-1">Resources / 04</span>
-  <h1 class="wf-anim wf-anim-2">Investment <em>Calculator.</em></h1>
-  <p class="lead wf-anim wf-anim-3">An indicative modelling tool for four Marjan investment scenarios. Calibrate the assumptions, see the headline returns, and export the scenario to take into your own due-diligence process. All figures are illustrative and benchmarked to public research from EY, Colliers, Knight Frank and JLL.</p>
+  <span class="wf-hero-tag wf-anim wf-anim-1">Resources · Calculator</span>
+  <h1 class="wf-anim wf-anim-2">Modelling Your <em>Investment</em></h1>
+  <p class="lead wf-anim wf-anim-3">An indicative tool for sizing returns across Marjan's investment categories. For illustrative purposes only — not investment advice.</p>
 </section>
 
-<!-- =============== SCENARIO TAB STRIP =============== -->
-<section class="wf-shell wf-shell--tight" style="padding-bottom:0;">
-  <nav class="wf-tabs" aria-label="Scenarios">
-    <a href="#btl" class="wf-tab is-active">Buy-to-let Residential</a>
-    <a href="#hosp" class="wf-tab">Hospitality Co-invest</a>
-    <a href="#comm" class="wf-tab">Commercial Lease-up</a>
-    <a href="#staff" class="wf-tab">Staff Accommodation</a>
-  </nav>
-</section>
-
-<!-- =============== ACTIVE SCENARIO: BUY-TO-LET =============== -->
-<section class="wf-shell wf-shell--tight" id="btl">
-  <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:8px;gap:24px;flex-wrap:wrap;">
-    <div>
-      <span class="wf-block-label">Scenario 01 · Active</span>
-      <h2 style="font-family:var(--font-display);font-size:clamp(32px,4vw,48px);font-weight:400;letter-spacing:-0.025em;color:var(--ink);line-height:1.05;">Buy-to-let <em>Residential.</em></h2>
-    </div>
-    <div style="font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);font-weight:600;">
-      <span>Updated Q4 2024 &middot; AED, illustrative</span>
-    </div>
-  </div>
-  <p style="font-size:16.5px;line-height:1.7;color:var(--text);max-width:780px;margin-top:16px;">A single freehold apartment on Al Marjan Island, held as a leveraged income asset over a 7-year window. Default inputs reflect Knight Frank Q3 2024 capital values and typical operator-led residential pool yields.</p>
+<!-- =============== BODY =============== -->
+<section class="wf-shell">
 
   <div class="wf-tool">
-    <!-- INPUTS -->
-    <div class="wf-tool-inputs">
-      <h3>Inputs</h3>
-      <div class="field"><label>Purchase price</label><span class="val">AED 3,200,000</span></div>
-      <div class="field"><label>Equity contribution</label><span class="val">35%</span></div>
-      <div class="field"><label>Loan term</label><span class="val">20 yrs</span></div>
-      <div class="field"><label>Interest rate</label><span class="val">5.75%</span></div>
-      <div class="field"><label>Annual rent</label><span class="val">AED 248,000</span></div>
-      <div class="field"><label>Occupancy</label><span class="val">88%</span></div>
-      <div class="field"><label>Service charge</label><span class="val">AED 42,000 / yr</span></div>
-      <div class="field"><label>Hold period</label><span class="val">7 yrs</span></div>
-      <div class="field"><label>Annual capital growth</label><span class="val">6.2%</span></div>
-      <div class="field"><label>Exit cap rate</label><span class="val">6.8%</span></div>
-      <div class="wf-cta-row" style="margin-top:24px;">
-        <button class="wf-cta wf-cta--ghost" type="button">Adjust assumptions</button>
-      </div>
-    </div>
-
-    <!-- OUTPUTS -->
+    <aside class="wf-tool-inputs">
+      <h3>Scenario Inputs</h3>
+      <div class="field"><label>Asset class</label><span class="val">Branded Residential</span></div>
+      <div class="field"><label>Capital commitment</label><span class="val">US$25M</span></div>
+      <div class="field"><label>Hold horizon</label><span class="val">8 years</span></div>
+      <div class="field"><label>Currency</label><span class="val">AED-pegged</span></div>
+      <div class="field"><label>Leverage</label><span class="val">50% LTV</span></div>
+      <div class="field"><label>Operator structure</label><span class="val">Branded JV</span></div>
+    </aside>
     <div class="wf-tool-outputs">
-      <h3>Results</h3>
+      <h3>Indicative Returns</h3>
       <div class="wf-result-grid">
         <div class="cell">
-          <div class="label">Target IRR (7-yr)</div>
-          <div class="val">11.4<em>%</em></div>
+          <div class="label">Projected Gross Yield</div>
+          <div class="val">6.4<em>%</em></div>
         </div>
         <div class="cell">
-          <div class="label">Equity multiple</div>
-          <div class="val">1.84<em>x</em></div>
+          <div class="label">Net Yield (Post-Fees)</div>
+          <div class="val">5.1<em>%</em></div>
         </div>
         <div class="cell">
-          <div class="label">Net rental yield</div>
-          <div class="val">6.3<em>%</em></div>
+          <div class="label">Total Return (8 yrs)</div>
+          <div class="val">82<em>%</em></div>
         </div>
         <div class="cell">
-          <div class="label">Net exit value</div>
-          <div class="val">AED <em>4.9M</em></div>
+          <div class="label">Projected IRR</div>
+          <div class="val">9.8<em>%</em></div>
         </div>
       </div>
-
-      <div class="wf-img wf-img--cool" style="min-height:280px;">
-        <div class="wf-img-caption"><span class="frame-num">02</span><span>Cashflow waterfall &middot; 7-year hold</span></div>
-      </div>
-
-      <div class="wf-note" style="margin-top:32px;">
-        <strong>Reading the result.</strong> An 11.4% IRR with a 1.84x equity multiple is consistent with the upper-mid band for leveraged residential exposure in the RAK freehold zone. The figure embeds a +28% Wynn-effect compression on exit cap, in line with Marjan's central-case underwriting.
-      </div>
-
-      <div class="wf-cta-row">
-        <a href="#" class="wf-cta">Talk to investments</a>
-        <a href="#" class="wf-cta wf-cta--ghost">Save scenario</a>
-        <a href="#" class="wf-cta wf-cta--ghost">Open in spreadsheet</a>
+      <div class="wf-note">
+        <strong>Disclaimer:</strong> The figures shown are indicative only and based on illustrative assumptions. Actual returns will vary by deal structure, market conditions, operator terms and currency outcomes. This calculator is not investment advice and does not constitute an offer to invest. Please contact Marjan's investor relations team for a tailored scenario.
       </div>
     </div>
   </div>
+
 </section>
 
-<!-- =============== OTHER SCENARIOS — SUMMARY CARDS =============== -->
-<section class="wf-shell wf-shell--tight">
-  <div class="wf-cat-head">
-    <span class="cat-num">More</span>
-    <h3>Other modelled scenarios</h3>
-    <p>Three further scenarios are pre-configured with Marjan's central-case assumptions. Open any one to flex the inputs.</p>
-  </div>
-
-  <div class="wf-grid wf-grid--3">
-    <div style="border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:16px;" id="hosp">
-      <span style="font-size:10px;color:var(--bronze);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;">Scenario 02</span>
-      <h4 style="font-family:var(--font-display);font-size:26px;font-weight:500;color:var(--ink);letter-spacing:-0.015em;line-height:1.15;margin:0;">Hospitality Co-invest</h4>
-      <p style="font-size:14px;color:var(--text);margin:0;line-height:1.55;">LP stake in a 350-450 key, 4-star-plus hotel JV alongside a Marjan-led sponsor and a brand operator.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;">
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">IRR</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">16.2%</div></div>
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">EM</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">2.18x</div></div>
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">Hold</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">8 yrs</div></div>
-      </div>
-      <a href="#" style="font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);margin-top:auto;">Open scenario &rarr;</a>
-    </div>
-
-    <div style="border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:16px;" id="comm">
-      <span style="font-size:10px;color:var(--bronze);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;">Scenario 03</span>
-      <h4 style="font-family:var(--font-display);font-size:26px;font-weight:500;color:var(--ink);letter-spacing:-0.015em;line-height:1.15;margin:0;">Commercial Lease-up</h4>
-      <p style="font-size:14px;color:var(--text);margin:0;line-height:1.55;">12,000 sqm Class A office acquired pre-stabilisation, leased up to 92% over 24 months with mixed tenant covenants.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;">
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">IRR</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">13.6%</div></div>
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">EM</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">1.96x</div></div>
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">Hold</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">6 yrs</div></div>
-      </div>
-      <a href="#" style="font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);margin-top:auto;">Open scenario &rarr;</a>
-    </div>
-
-    <div style="border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:16px;" id="staff">
-      <span style="font-size:10px;color:var(--bronze);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;">Scenario 04</span>
-      <h4 style="font-family:var(--font-display);font-size:26px;font-weight:500;color:var(--ink);letter-spacing:-0.015em;line-height:1.15;margin:0;">Staff Accommodation</h4>
-      <p style="font-size:14px;color:var(--text);margin:0;line-height:1.55;">Build-to-rent staff village serving the 7,200 hospitality FTEs forecast for Al Marjan by 2028. Master-leased to operators.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;">
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">IRR</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">12.1%</div></div>
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">EM</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">1.74x</div></div>
-        <div><div style="font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:600;">Hold</div><div style="font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:-0.02em;">10 yrs</div></div>
-      </div>
-      <a href="#" style="font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);margin-top:auto;">Open scenario &rarr;</a>
-    </div>
-  </div>
-</section>
-
-<!-- =============== ASSUMPTIONS REGISTER =============== -->
-<section class="wf-shell wf-shell--tight">
-  <div class="wf-cat-head">
-    <span class="cat-num">Reg.</span>
-    <h3>Assumptions register</h3>
-    <p>Every input above is sourced. The register is reviewed quarterly against the latest third-party research and Marjan's internal deal book.</p>
-  </div>
-
-  <table class="wf-list">
-    <thead>
-      <tr>
-        <th style="width:38%;">Assumption</th>
-        <th style="width:22%;">Value (central case)</th>
-        <th style="width:40%;">Source</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td><strong>Capital growth, residential</strong></td><td>6.2% p.a.</td><td>Knight Frank — Residential Capital Values, Q3 2024</td></tr>
-      <tr><td><strong>Stabilised vacancy, branded residential</strong></td><td>12%</td><td>Colliers — RAK Supply Pipeline, 2024</td></tr>
-      <tr><td><strong>Stabilised vacancy, unbranded residential</strong></td><td>16%</td><td>Colliers — RAK Supply Pipeline, 2024</td></tr>
-      <tr><td><strong>Service charge inflation</strong></td><td>3.5% p.a.</td><td>RAK community management framework</td></tr>
-      <tr><td><strong>Operating expense ratio, hotel</strong></td><td>62-68% of revenue</td><td>EY Hospitality Outlook — RAK 2024-2030</td></tr>
-      <tr><td><strong>Hotel ADR growth, pre-Wynn</strong></td><td>6-9% p.a.</td><td>EY Hospitality Outlook — RAK 2024-2030</td></tr>
-      <tr><td><strong>Hotel ADR growth, post-Wynn</strong></td><td>12-18% p.a.</td><td>EY Hospitality Outlook + Marjan internal sensitivity</td></tr>
-      <tr><td><strong>System occupancy, stabilised</strong></td><td>78-85%</td><td>Colliers + Marjan trailing actuals 2024</td></tr>
-      <tr><td><strong>FF&amp;E reserve, hotel</strong></td><td>4% of revenue</td><td>HMA market standard, IHG/Marriott/Hilton</td></tr>
-      <tr><td><strong>Operator base management fee</strong></td><td>2.5% of revenue</td><td>HMA market standard</td></tr>
-      <tr><td><strong>Operator incentive fee</strong></td><td>10% of GOP</td><td>HMA market standard</td></tr>
-      <tr><td><strong>Exit cap rate, residential</strong></td><td>6.5-7.0%</td><td>Knight Frank — comparable transactions, 2024</td></tr>
-      <tr><td><strong>Exit cap rate, hospitality</strong></td><td>7.0-8.5%</td><td>EY / Colliers — RAK transactional benchmarks</td></tr>
-      <tr><td><strong>Exit cap rate, Class A office</strong></td><td>7.5-8.0%</td><td>JLL — Retail &amp; Office Benchmarks, 2024</td></tr>
-      <tr><td><strong>UAE corporate tax (operating)</strong></td><td>9% above AED 375K</td><td>UAE Federal Tax Authority, June 2023</td></tr>
-      <tr><td><strong>VAT (where applicable)</strong></td><td>5%</td><td>UAE Federal Tax Authority</td></tr>
-      <tr><td><strong>Title transfer fee, RAK</strong></td><td>4% (one-time)</td><td>RAK Land Department</td></tr>
-      <tr><td><strong>AED / USD peg</strong></td><td>AED 3.6725 = USD 1</td><td>UAE Central Bank (fixed)</td></tr>
-    </tbody>
-  </table>
-</section>
-
-<!-- =============== METHODOLOGY =============== -->
-<section class="wf-shell wf-shell--tight" style="background:var(--cream);">
-  <div style="max-width:880px;margin:0 auto;">
-    <span class="wf-block-label">Methodology &amp; disclaimer</span>
-    <h2 style="font-family:var(--font-display);font-size:clamp(28px,3.5vw,40px);font-weight:400;letter-spacing:-0.025em;color:var(--ink);line-height:1.15;margin-bottom:24px;">How to read these numbers.</h2>
-    <p style="font-size:16px;line-height:1.7;color:var(--text);margin-bottom:18px;">The calculator runs a deterministic discounted-cashflow model over the hold period for each scenario. Inputs default to Marjan's central-case assumptions, sourced and documented in the register above. All results are project-level (pre-fund-level fees), expressed in AED, and assume the AED/USD peg holds for the duration of the modelled hold.</p>
-    <p style="font-size:16px;line-height:1.7;color:var(--text);margin-bottom:18px;">Ranges should be read as plausible bands, not single-point forecasts. Macroeconomic conditions, the precise opening trajectory of Wynn Al Marjan Island and the absorption rate of competing supply will all move the result. Marjan publishes a quarterly recalibration note alongside the Q1/Q4 investor updates.</p>
-    <p style="font-size:14px;line-height:1.65;color:var(--muted);margin-bottom:0;font-style:italic;">This calculator is provided for indicative purposes only. It does not constitute investment advice, an offer to sell or a solicitation to buy securities or property. Investors should conduct their own due diligence and seek independent professional advice before committing capital.</p>
-  </div>
-</section>
-
-<!-- =============== NEXT STEPS PANEL =============== -->
-<section class="wf-shell wf-shell--tight">
-  <div class="wf-cat-head">
-    <span class="cat-num">Next</span>
-    <h3>Next steps</h3>
-    <p>Three ways to take this further — from a 30-minute investor call through to a full-fat scenario file you can run inside your own model.</p>
-  </div>
-  <div class="wf-grid wf-grid--3">
-    <div style="border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:16px;">
-      <span style="font-size:10px;color:var(--bronze);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;">01 / 03</span>
-      <h4 style="font-family:var(--font-display);font-size:24px;font-weight:500;color:var(--ink);letter-spacing:-0.015em;line-height:1.15;margin:0;">Talk to investments</h4>
-      <p style="font-size:14.5px;color:var(--text);margin:0;line-height:1.55;">A 30-minute call with a Marjan investments lead. Walk through your scenario, your capital structure, your timeline. Typically scheduled within 5 working days.</p>
-      <a href="../investment/process.html" class="wf-cta" style="margin-top:auto;align-self:flex-start;">Book a call</a>
-    </div>
-    <div style="border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:16px;">
-      <span style="font-size:10px;color:var(--bronze);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;">02 / 03</span>
-      <h4 style="font-family:var(--font-display);font-size:24px;font-weight:500;color:var(--ink);letter-spacing:-0.015em;line-height:1.15;margin:0;">Save scenario</h4>
-      <p style="font-size:14.5px;color:var(--text);margin:0;line-height:1.55;">Save the current input set to a shareable link. Useful for circulating to your investment committee, your advisors, or a co-investor before a deeper conversation.</p>
-      <a href="#" class="wf-cta wf-cta--ghost" style="margin-top:auto;align-self:flex-start;">Save link</a>
-    </div>
-    <div style="border:1px solid var(--line);padding:32px;display:flex;flex-direction:column;gap:16px;">
-      <span style="font-size:10px;color:var(--bronze);letter-spacing:0.18em;text-transform:uppercase;font-weight:600;">03 / 03</span>
-      <h4 style="font-family:var(--font-display);font-size:24px;font-weight:500;color:var(--ink);letter-spacing:-0.015em;line-height:1.15;margin:0;">Open in spreadsheet</h4>
-      <p style="font-size:14.5px;color:var(--text);margin:0;line-height:1.55;">Download the underlying model as an Excel file. Full cashflow build, sensitivity tables and source citations included for use in your own underwriting.</p>
-      <a href="#" class="wf-cta wf-cta--ghost" style="margin-top:auto;align-self:flex-start;">Download model</a>
-    </div>
+<!-- =============== DARK CLOSING =============== -->
+<section class="wf-shell wf-shell--dark">
+  <h2>Validate Your Scenario with Investor Relations</h2>
+  <p>Marjan's investment team works through each scenario in detail — deal structure, capital stack, operator alignment and exit pathway. Speak to us to move from illustrative to indicative terms.</p>
+  <div class="wf-cta-row">
+    <a class="wf-cta" href="mailto:invest@marjan.ae">Email Investor Relations</a>
+    <a class="wf-cta wf-cta--ghost" href="../investment/process.html">Investment Process</a>
   </div>
 </section>
 
@@ -248,48 +92,43 @@
 <footer class="wf-footer">
   <div class="wf-footer-inner">
     <div>
-      <div class="wf-footer-brand">Master developer<br/>of <em>Al Marjan Island.</em></div>
-      <p class="wf-footer-meta">Marjan is the master developer behind Al Marjan Island and the strategic real-estate arm of the Government of Ras Al Khaimah. Headquartered in RAK, UAE.</p>
+      <div class="wf-footer-brand">Marjan — Master Developer of Ras Al Khaimah.</div>
+      <p class="wf-footer-meta">Aligned with RAK Vision 2030. Designed for life, defining the future of the emirate.</p>
     </div>
     <div>
-      <h5>Development</h5>
+      <h5>Resources</h5>
       <ul>
-        <li><a href="../development/future-developments.html">Future Developments</a></li>
-        <li><a href="../hospitality/hard-rock.html">Hard Rock</a></li>
-        <li><a href="../hospitality/branded-residences.html">Branded Residences</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li><a href="investment-calculator.html">Investment Calculator</a></li>
       </ul>
     </div>
     <div>
       <h5>Invest</h5>
       <ul>
         <li><a href="../investment/overview.html">Overview</a></li>
-        <li><a href="../investment/by-sector.html">By Sector</a></li>
         <li><a href="../investment/process.html">Process</a></li>
-        <li><a href="investment-calculator.html">Calculator</a></li>
       </ul>
     </div>
     <div>
-      <h5>News &amp; Careers</h5>
+      <h5>Hospitality</h5>
       <ul>
-        <li><a href="../news-media/latest-news.html">Latest News</a></li>
-        <li><a href="../news-media/media-centre.html">Media Centre</a></li>
-        <li><a href="../careers/working-at-marjan.html">Working at Marjan</a></li>
-        <li><a href="../careers/current-openings.html">Openings</a></li>
+        <li><a href="../hospitality/hard-rock.html">Hard Rock</a></li>
+        <li><a href="../hospitality/branded-residences.html">Branded Residences</a></li>
       </ul>
     </div>
     <div>
-      <h5>Resources &amp; Legal</h5>
+      <h5>Legal</h5>
       <ul>
-        <li><a href="faqs.html">FAQs</a></li>
-        <li><a href="glossary.html">Glossary</a></li>
-        <li><a href="../legal/legal-notices.html">Legal Notices</a></li>
+        <li><a href="../legal/legal-notices.html">Notices</a></li>
         <li><a href="../legal/data-protection.html">Data Protection</a></li>
       </ul>
     </div>
   </div>
   <div class="wf-footer-bottom">
-    <span>Marjan · Phase 2 wireframes · <a href="../../index.html">Index</a></span>
-    <span>Mid-fi mockup · concept only</span>
+    <span>© 2026 Marjan LLC. All rights reserved.</span>
+    <span>info@marjan.ae · +971 (7) 203 5000</span>
   </div>
 </footer>
 

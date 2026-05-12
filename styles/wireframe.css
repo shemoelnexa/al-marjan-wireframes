@@ -179,17 +179,58 @@ a { color: inherit; text-decoration: none; }
   color: var(--paper);
   overflow: hidden;
 }
+.wf-hero > img.wf-img-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
 .wf-hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 80% 30%, rgba(59, 81, 115, 0.45), transparent 55%),
-    radial-gradient(ellipse at 20% 80%, rgba(19, 41, 75, 0.4), transparent 55%),
-    linear-gradient(160deg, var(--mist) 0%, var(--ink-deep) 70%);
+    radial-gradient(ellipse at 80% 30%, rgba(59, 81, 115, 0.30), transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(19, 41, 75, 0.30), transparent 55%),
+    linear-gradient(160deg, rgba(19, 41, 75, 0.55) 0%, rgba(0, 0, 6, 0.82) 75%);
   pointer-events: none;
+  z-index: 1;
 }
-.wf-hero > * { position: relative; z-index: 1; }
+.wf-hero > *:not(img.wf-img-bg) { position: relative; z-index: 2; }
+
+/* Hero CTAs must remain readable on dark image backgrounds */
+.wf-hero .wf-cta {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+.wf-hero .wf-cta:hover {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--paper);
+}
+.wf-hero .wf-cta--ghost {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--paper);
+}
+.wf-hero .wf-cta--ghost:hover {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+.wf-hero .wf-cta--light {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+.wf-hero .wf-cta--light:hover {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--paper);
+}
 
 .wf-hero-tag {
   display: inline-block;
